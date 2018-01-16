@@ -1,0 +1,10 @@
+# files
+*.log
+*.zip
+.DS_Store
+
+# folders
+node_modules/*
+
+# Editor directories and files
+.idea
