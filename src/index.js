@@ -2,6 +2,8 @@
  * @desc webpack打包入口
  */
 
-import a from './demo'
+const create = require('./create')
 
-console.log(a)
+module.exports = {
+  create
+}

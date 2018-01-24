@@ -1,10 +1,12 @@
 {
-  "name": "seamless-scroll",
+  "name": "seamlessScroll",
   "version": "0.0.0",
   "description": "js无缝滚动插件",
   "main": "build/seamless-scroll.min.js",
   "scripts": {
-    "build": "node script/build.js"
+    "build": "node script/build.js",
+    "build:debug": "node script/build-debug.js",
+    "build:all": "npm run build &&npm run build:debug"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   ],
   "author": "chenxuan",
   "license": "MIT",
+  "dependencies": {
+    "comutils": "^1.1.10"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

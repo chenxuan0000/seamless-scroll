@@ -8,9 +8,9 @@ const rootPath = path.resolve(__dirname, '../')
 
 
 const config = {
-  entry: path.resolve(rootPath, 'src', 'index.js'),
+  entry: path.resolve(rootPath, 'src', 'seamless.js'),
   output: {
-    filename: `${pkg.name}.min.js`,
+    filename: `${pkg.name}.js`,
     path: path.resolve(rootPath, 'build'),
     library: `${pkg.name}`,
     libraryTarget: 'umd'
@@ -20,22 +20,14 @@ const config = {
       test: /\.js$/,
       loader: 'babel-loader'
     }]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {screw_ie8: false},
-      mangle: {except: ['$']},
-      support_ie8: true,
-      warnings: false
-    })
-  ]
+  }
 }
 
 new Promise(() => {
   // 构建全量压缩包
   let building = ora('building...')
   building.start()
-  rm(path.resolve(rootPath, 'build', `${pkg.name}.min.js`), err => {
+  rm(path.resolve(rootPath, 'build', `${pkg.name}.js`), err => {
     if (err) throw (err)
     webpack(config, function (err, stats) {
       if (err) throw (err)

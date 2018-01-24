@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./test/reset.css">
+        <link rel="stylesheet" href="./test/demo.css">
+        <title>无缝滚动demo</title>
+    </head>
+    <body>
+        <div class="demo1">
+            <ul class="list" id="demo1">
+                <li class="clearfix">
+                    <span class="title">无缝滚动第一行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第二行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第三行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第四行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第五行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第六行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第七行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+                <li class="clearfix">
+                    <span class="title">无缝滚动第八行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                </li>
+            </ul>
+        </div>
+        <div class="demo2">
+            <ul class="list2 clearfix" id="demo2">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <div class="demo2">
+            <ul class="list2 clearfix" id="demo3">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <script src="./build/seamlessScroll.js"></script>
+        <script>
+          new seamlessScroll({
+            dom: document.getElementById('demo1'),
+            singleHeight: 30
+          })
+          new seamlessScroll({
+            dom: document.getElementById('demo2'),
+            direction: 2
+          })
+          new seamlessScroll({
+            dom: document.getElementById('demo3'),
+            direction: 2,
+            singleWidth: 120
+          })
+        </script>
+    </body>
+</html>
