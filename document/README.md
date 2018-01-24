@@ -2,7 +2,7 @@
 > js无缝滚动插件
 
 <p align="center">
-    <img src="../test/time.jpg" width="440"/>
+    <img src="../test/timg.jpg" width="440"/>
 </p>  
                                            
 <p align="center">

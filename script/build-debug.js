@@ -8,7 +8,7 @@ const rootPath = path.resolve(__dirname, '../')
 
 
 const config = {
-  entry: path.resolve(rootPath, 'src', 'seamless.js'),
+  entry: path.resolve(rootPath, 'src', 'index.js'),
   output: {
     filename: `${pkg.name}.js`,
     path: path.resolve(rootPath, 'build'),

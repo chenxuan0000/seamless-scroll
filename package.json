@@ -1,5 +1,5 @@
 {
-  "name": "seamlessScroll",
+  "name": "seamscroll",
   "version": "0.0.0",
   "description": "js无缝滚动插件",
   "main": "build/seamless-scroll.min.js",

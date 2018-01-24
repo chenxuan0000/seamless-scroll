@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["seamlessScroll"] = factory();
+		exports["seamscroll"] = factory();
 	else
-		root["seamlessScroll"] = factory();
+		root["seamscroll"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -77,10 +77,35 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1)();
-var copyObj = __webpack_require__(2);
-var addEventListener = __webpack_require__(3);
-var getStyle = __webpack_require__(4);
+/**
+ * @desc webpack打包入口
+ */
+
+var init = __webpack_require__(1);
+
+module.exports = {
+  init: init
+};
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var seamless = __webpack_require__(2);
+
+var create = function create(options) {
+  return new seamless(options);
+};
+module.exports = create;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(3)();
+var copyObj = __webpack_require__(4);
+var addEventListener = __webpack_require__(5);
+var getStyle = __webpack_require__(6);
 
 var defaultOptions = {
   step: 1, //步长
@@ -202,7 +227,7 @@ seamless.prototype = {
 module.exports = seamless;
 
 /***/ }),
-/* 1 */
+/* 3 */
 /***/ (function(module, exports) {
 
 /**
@@ -224,7 +249,7 @@ var animationFrame = function animationFrame() {
 module.exports = animationFrame;
 
 /***/ }),
-/* 2 */
+/* 4 */
 /***/ (function(module, exports) {
 
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -307,7 +332,7 @@ function copyObj() {
 module.exports = copyObj;
 
 /***/ }),
-/* 3 */
+/* 5 */
 /***/ (function(module, exports) {
 
 var addEventListener = function addEventListener(element, type, callback) {
@@ -323,7 +348,7 @@ var addEventListener = function addEventListener(element, type, callback) {
 module.exports = addEventListener;
 
 /***/ }),
-/* 4 */
+/* 6 */
 /***/ (function(module, exports) {
 
 var getStyle = function getStyle(dom, name) {
