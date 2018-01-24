@@ -10,55 +10,57 @@
         <title>无缝滚动demo</title>
     </head>
     <body>
-        <div class="demo1">
-            <ul class="list" id="demo1">
-                <li class="clearfix">
-                    <span class="title">无缝滚动第一行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第二行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第三行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第四行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第五行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第六行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第七行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-                <li class="clearfix">
-                    <span class="title">无缝滚动第八行无缝滚动第一行</span><span class="date">2017-12-16</span>
-                </li>
-            </ul>
+        <div class="warpper" style="width: 520px;margin: 100px auto;">
+            <div class="demo1">
+                <ul class="list" id="demo1">
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第一行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第二行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第三行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第四行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第五行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第六行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第七行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第八行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="demo2">
+                <ul class="list2 clearfix" id="demo2">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+            <div class="demo2">
+                <ul class="list2 clearfix" id="demo3">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
         </div>
-        <div class="demo2">
-            <ul class="list2 clearfix" id="demo2">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
-        </div>
-        <div class="demo2">
-            <ul class="list2 clearfix" id="demo3">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
-        </div>
-        <script src="./build/seamscroll.min.js"></script>
+        <script src="./build/seamscroll.js"></script>
         <script>
           seamscroll.init({
             dom: document.getElementById('demo1')
