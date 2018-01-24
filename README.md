@@ -1,7 +1,7 @@
 # seamless-scroll 
 > js seamless-scroll plugin
 
-[![Build Status](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/seamless-scroll) ![](https://img.shields.io/npm/v/seamless-scroll.svg)
+[![Build Status](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/seamscroll) ![](https://img.shields.io/npm/v/seamscroll.svg)
 
 <p align="center">
     <img src="./test/timg.jpg" width="440"/>
