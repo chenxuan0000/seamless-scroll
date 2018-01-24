@@ -1,8 +1,8 @@
 {
   "name": "seamscroll",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "js无缝滚动插件",
-  "main": "build/seamless-scroll.min.js",
+  "main": "build/seamscroll.min.js",
   "scripts": {
     "build": "node script/build.js",
     "build:debug": "node script/build-debug.js",
