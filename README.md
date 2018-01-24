@@ -2,7 +2,7 @@
 > js seamless-scroll plugin
 
 <p align="center">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516788010144&di=c9ac24d9af770295e31dcf180d4cd614&imgtype=0&src=http%3A%2F%2Fimg.mukewang.com%2F54d3157a0001352f04280252.jpg" width="480"/>
+    <img src="./test/time.jpg" width="440"/>
 </p>  
                                            
 <p align="center">
