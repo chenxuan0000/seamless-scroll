@@ -15,6 +15,7 @@ body {
 }
 .list li {
     line-height: 30px;
+    margin-top: 10px;
 }
 .list .title {
     float: left;

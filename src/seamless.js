@@ -17,6 +17,7 @@ let seamless = function (options) {
   let dom = this.options.dom
   if (!dom) throw new Error('you must set a dom')
   dom.style.position = 'relative'
+  dom.style.overflow = 'hidden'
   this.reqFrame = null
   this._top = 0
   this._left = 0
