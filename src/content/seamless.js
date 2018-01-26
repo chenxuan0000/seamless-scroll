@@ -21,6 +21,7 @@ let seamless = function (options) {
   this.reqFrame = null
   this._top = 0
   this._left = 0
+  this.isHover = false //_move()方法的开关
   dom.innerHTML += dom.innerHTML
   if (this.options.direction > 1) {
     //水平向滚动
@@ -41,21 +42,21 @@ seamless.prototype = {
   _cancle () {
     cancelAnimationFrame(this.reqFrame || '')
   },
-  _returnHoverStop () {
-    return !this.options.hoverStop || !!this.options.singleHeight || !!this.options.singleWidth
-  },
   _bindEvent () {
-    if (this._returnHoverStop()) return
+    if (!this.options.hoverStop) return
     let that = this
     let dom = this.options.dom
     addEventListener(dom, 'mouseenter', function () {
+      that.isHover = true // 关闭_move
       that._cancle()
     })
     addEventListener(dom, 'mouseleave', function () {
+      that.isHover = false // 开启_move
       that._move()
     })
   },
   _move () {
+    if(this.isHover) return
     this._cancle()
     let that = this
     let dom = this.options.dom
@@ -63,7 +64,6 @@ seamless.prototype = {
       function () {
         let h = dom.offsetHeight / 2  //实际高度
         let direction = that.options.direction //滚动方向
-
         if (direction === 1) { // 上
           if (Math.abs(that._top) >= h) that._top = 0
           that._top -= that.options.step
