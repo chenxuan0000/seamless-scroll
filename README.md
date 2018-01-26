@@ -28,6 +28,8 @@
 ```bash
 npm install seamscroll --save
 ```
+### CDN
+`https://cdn.jsdelivr.net/npm/seamscroll@0.0.10/build/seamscroll.min.js`
 
 ## Usage
 

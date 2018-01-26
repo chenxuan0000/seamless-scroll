@@ -20,6 +20,17 @@
 
 * 不支持移动端手势。
 
+
+## 安装
+
+### NPM
+
+```bash
+npm install seamscroll --save
+```
+### CDN
+`https://cdn.jsdelivr.net/npm/seamscroll@0.0.10/build/seamscroll.min.js`
+
 ## 使用
 
 ```js
