@@ -123,6 +123,7 @@ var seamless = function seamless(options) {
   dom.style.position = 'relative';
   dom.style.overflow = 'hidden';
   this.reqFrame = null;
+  this.singleWaitTime = null; // single 单步滚动的定时器
   this._top = 0;
   this._left = 0;
   this.isHover = false; //_move()方法的开关
@@ -152,6 +153,8 @@ seamless.prototype = {
     var dom = this.options.dom;
     addEventListener(dom, 'mouseenter', function () {
       that.isHover = true; // 关闭_move
+      // 防止蛋疼的人频频hover进出单步滚动 导致定时器乱掉
+      if (that.singleWaitTime) clearTimeout(that.singleWaitTime);
       that._cancle();
     });
     addEventListener(dom, 'mouseleave', function () {
@@ -196,13 +199,12 @@ seamless.prototype = {
 
     var singleH = this.options.singleHeight;
     var singleW = this.options.singleWidth;
-    var timer = void 0;
+    if (this.singleWaitTime) clearTimeout(this.singleWaitTime);
     if (!!singleH) {
       //是否启动了单行暂停配置
       if (Math.abs(this._top) % singleH === 0) {
         // 符合条件暂停waitTime
-        if (timer) clearTimeout(timer);
-        timer = setTimeout(function () {
+        this.singleWaitTime = setTimeout(function () {
           _this._move();
         }, this.options.waitTime);
       } else {
@@ -211,8 +213,7 @@ seamless.prototype = {
     } else if (!!singleW) {
       if (Math.abs(this._left) % singleW === 0) {
         // 符合条件暂停waitTime
-        if (timer) clearTimeout(timer);
-        timer = setTimeout(function () {
+        this.singleWaitTime = setTimeout(function () {
           _this._move();
         }, this.options.waitTime);
       } else {

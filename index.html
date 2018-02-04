@@ -59,6 +59,34 @@
                     <li>6</li>
                 </ul>
             </div>
+            <div class="demo1" style="margin-top: 80px;">
+                <ul class="list" id="demo4">
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第一行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第二行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第三行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第四行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第五行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第六行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第七行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="title">无缝滚动第八行无缝滚动第一行</span><span class="date">2017-12-16</span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <script src="./build/seamscroll.js"></script>
         <script>
@@ -73,6 +101,11 @@
             dom: document.getElementById('demo3'),
             direction: 2,
             singleWidth: 120
+          })
+          seamscroll.init({
+            dom: document.getElementById('demo4'),
+            step:2,
+            singleHeight: 40
           })
         </script>
     </body>

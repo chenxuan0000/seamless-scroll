@@ -1,6 +1,6 @@
 {
   "name": "seamscroll",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "js seamless scroll",
   "main": "build/seamscroll.min.js",
   "scripts": {
