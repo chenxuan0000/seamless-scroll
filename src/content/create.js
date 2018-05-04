@@ -1,6 +1,7 @@
-const seamless = require('./seamless')
+import seamless from './seamless'
 
-const create = (options) => {
-  return new seamless(options)
+const create = options => {
+	return new seamless(options)
 }
-module.exports = create
+
+export default create

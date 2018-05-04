@@ -2,8 +2,6 @@
  * @desc webpack打包入口
  */
 
-const init = require('./content/create')
+import init from './content/create'
 
-module.exports = {
-  init
-}
+export { init }
