@@ -29,7 +29,7 @@
 npm install seamscroll --save
 ```
 ### CDN
-`https://cdn.jsdelivr.net/npm/seamscroll@0.0.11/build/seamscroll.min.js`
+`https://cdn.jsdelivr.net/npm/seamscroll@0.0.12/build/seamscroll.min.js`
 
 ## Usage
 
@@ -38,14 +38,14 @@ const seamless = require('seamscroll')
  `or`
 import seamless from 'seamscroll'
 
-seamless.init({
+seamscroll.init({
   dom: document.getElementById('demo1')
 })
 
 //script tag
 <script src="seamscroll.min.js"></script>
 <script>
-seamless.init({
+seamscroll.init({
   dom: document.getElementById('demo1')
 })
 </script>
