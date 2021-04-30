@@ -38,14 +38,14 @@ const seamless = require('seamscroll')
  `or`
 import seamless from 'seamscroll'
 
-seamscroll.init({
+seamless.init({
   dom: document.getElementById('demo1')
 })
 
 //script tag
 <script src="seamscroll.min.js"></script>
 <script>
-seamscroll.init({
+seamless.init({
   dom: document.getElementById('demo1')
 })
 </script>
